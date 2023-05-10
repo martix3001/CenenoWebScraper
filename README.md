@@ -1,1 +1,4 @@
 # CeneoWebScraper
+
+## Używane biblioteki
+Flask
