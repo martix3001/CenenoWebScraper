@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="pl">
+    <head>
+
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>PP2 - CeneoWebScraper</title>
+
+    <link href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.min.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/buttons/2.0.1/css/buttons.dataTables.min.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/select/1.3.3/css/select.dataTables.min.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/datetime/1.1.1/css/dataTables.dateTime.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <ul class="nav justify-content-center bg-dark">
+                <li class="nav-item">
+                  <a class="nav-link active" href="index.html">Strona Główna</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="ekstrakcja.html">Ekstrakcja</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="lista_produkt.html">Lista Produktów</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="autor.html">O autorze</a>
+                </li>
+              </ul>
+        </header>
+            <div class="container mt-5">
+                <h1>Strona produktu</h1>
+                <table id="OpinionTable" class="table">
+                    <thead>
+                        <tr>
+                            <th>Id:</th>
+                            <th>Autor</th>
+                            <th>Rekomendacja</th>
+                            <th>Ocena</th>
+                            <th>Zweryfikowana</th>
+                            <th>Data publikacji</th>
+                            <th>Data Zakupu</th>
+                            <th>Liczba polubien</th>
+                            <th>Liczba niepolubien</th>
+                            <th>Treść:</th>
+                            <th>Zalety:</th>
+                            <th>Wady:</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                          <tr>
+                            <td>15164565</td>
+                            <td>e...2</td>
+                            <td>Polecam</td>
+                            <td>4,5/5</td>
+                            <td>Transakcja pochodzi z Marketplace Ceneo (usługi Kup Teraz).</td>
+                            <td>2021-11-04 11:50:18</td>
+                            <td>2021-10-27 19:04:56</td>
+                            <td>1</td>
+                            <td>4</td>
+                            <td>Użytkuję od 5 dni, w porównaniu do mojej wcześniejszej kupionej 10 lat temu za te same pieniądze, przede wszystkim poziom głośności nie do porównania, na korzyść oczywiście. Producent niestety zrezygnował z gadżetów- nie podnosząc tym samym ceny, brakuje mi ledów w zamrażalce, niebieskiego podświetlenia zewnętrznego między drzwiczkami (świetna sprawa nocą - były 3 poziomy), i na koniec - dużego wyświetlacza - ok 10 cali, mozna było sobie przeglądać zdjęcia min). Nowa lodówka jest bardziej przestrzenna, zewnętrzny design bardziej nowoczesny.</td>
+                            <td></td>
+                            <td>głośność pracy, klasa energetyczna, pojemność, wygoda</td>
+                          </tr>
+                          <tr>
+                            <td>15267092</td>
+                            <td>Kasia</td>
+                            <td>Polecam</td>
+                            <td>5/5</td>
+                            <td>Transakcja pochodzi z Marketplace Ceneo (usługi Kup Teraz).</td>
+                            <td>2021-11-26 20:27:34</td>
+                            <td>2021-11-13 00:25:34</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>Super produkt</td>
+                            <td></td>
+                            <td>jakość wykończenia, klasa energetyczna, oświetlenie, pojemność, świetna, wygoda</td>
+                          </tr>
+                         
+                    </tbody>
+                </table>
+                <div class="mt-3">
+                    <a href="plik.csv" class="btn btn-primary">Pobierz CSV</a>
+                    <a href="plik.xlsx" class="btn btn-primary">Pobierz XLSX</a>
+                    <a href="plik.json" class="btn btn-primary">Pobierz JSON</a>
+                </div>
+                <div class="mt-3">
+                    <a href="wykresy.html" class="btn btn-primary">Przejdź do wykresów</a>
+                </div>
+            </div>
+           
+      </body>
+</html
