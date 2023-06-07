@@ -1,38 +1,6 @@
-<!doctype html>
-<html lang="pl">
-    <head>
-
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <title>PP2 - CeneoWebScraper</title>
-
-    <link href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.min.css" rel="stylesheet">
-    <link href="https://cdn.datatables.net/buttons/2.0.1/css/buttons.dataTables.min.css" rel="stylesheet">
-    <link href="https://cdn.datatables.net/select/1.3.3/css/select.dataTables.min.css" rel="stylesheet">
-    <link href="https://cdn.datatables.net/datetime/1.1.1/css/dataTables.dateTime.min.css" rel="stylesheet">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" rel="stylesheet">
-    </head>
-
-    <body>
-        <header>
-            <ul class="nav justify-content-center bg-dark">
-                <li class="nav-item">
-                  <a class="nav-link active" href="index.html">Strona Główna</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="ekstrakcja.html">Ekstrakcja</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="lista_produkt.html">Lista Produktów</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="autor.html">O autorze</a>
-                </li>
-              </ul>
-        </header>
-            <div class="container mt-5">
-                <h1>Strona produktu</h1>
+{% extends 'base.html' %}
+{% block title %}Strona produktu{% endblock %}
+{% block content %}
                 <table id="OpinionTable" class="table">
                     <thead>
                         <tr>
@@ -91,6 +59,4 @@
                     <a href="wykresy.html" class="btn btn-primary">Przejdź do wykresów</a>
                 </div>
             </div>
-           
-      </body>
-</html
+{% endblock %}                

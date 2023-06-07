@@ -14,23 +14,33 @@
         <header>
             <ul class="nav justify-content-center bg-dark">
                 <li class="nav-item">
-                  <a class="nav-link active" href="index.html">Strona Główna</a>
+                  <a class="nav-link " href="{{url_for('index')}}">Strona Główna</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="ekstrakcja.html">Ekstrakcja</a>
+                  <a class="nav-link" href="{{url_for('ekstrakcja')}}">Ekstrakcja</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="lista_produkt.html">Lista Produktów</a>
+                  <a class="nav-link" href="{{url_for('lista_produkt')}}">Lista Produktów</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="autor.html">O autorze</a>
+                    <a class="nav-link" href="{{url_for('autor')}}">O autorze</a>
                 </li>
               </ul>
-            </header>
-            <div>
-                <p>WYKRESY</p>
+        </header>
+        <div class="container">
+            <div class="row tex-center">
+                <div class="col">
+                    <h2>{% block title %}{% endblock %}</h2>
+                </div>
             </div>
+            <div class="row">
+                <div class="col">
+                    {% block content %}{% endblock %}
 
+                </div>
+        </div>
+        {% block script %}
+        {% endblock %}
 
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
